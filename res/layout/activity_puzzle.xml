@@ -1,0 +1,111 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/v2_theme_bg_color" >
+
+    <!-- TitleBar -->
+
+    <include
+        android:id="@+id/common_titlebar"
+        layout="@layout/titlebar_activity" />
+
+    <!-- 内容展示区域 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/common_titlebar"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@+id/puzzle_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/v2_bottom_line"
+            android:padding="@dimen/line_1px" >
+
+            <GridView
+                android:id="@+id/gv_puzzle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="4"
+                android:stretchMode="columnWidth" >
+            </GridView>
+
+            <ImageView
+                android:id="@+id/img_puzzle_complete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:contentDescription="@null"
+                android:padding="@dimen/line_1px"
+                android:src="@drawable/ic_launcher" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/gap_size_normal"
+            android:paddingRight="@dimen/gap_size_normal" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt_step_hint"
+                    android:textColor="@color/C3"
+                    android:textSize="@dimen/T3" />
+
+                <TextView
+                    android:id="@+id/tv_steps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_0"
+                    android:textColor="@color/C4"
+                    android:textSize="@dimen/T3" />
+            </LinearLayout>
+
+            <Button
+                android:layout_marginTop="@dimen/gap_size_small"
+                android:id="@+id/btn_restart"
+                style="@style/blueBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_restart" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gap_size_small"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btn_grid_9"
+                    style="@style/redBtn"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="6dip"
+                    android:layout_weight="1"
+                    android:enabled="false"
+                    android:text="@string/txt_nine" />
+
+                <Button
+                    android:id="@+id/btn_grid_16"
+                    style="@style/redBtn"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dip"
+                    android:layout_weight="1"
+                    android:text="@string/txt_16_grid" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

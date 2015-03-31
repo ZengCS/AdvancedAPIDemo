@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_list_selector"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/gap_size_normal" >
+
+        <ImageView
+            android:id="@+id/main_option_img"
+            android:layout_width="@dimen/my_course_career_size"
+            android:layout_height="@dimen/my_course_career_size"
+            android:background="@color/B4"
+            android:contentDescription="@null"
+            android:padding="@dimen/line_1px"
+            android:src="@drawable/ic_option" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/gap_size_small"
+            android:layout_toRightOf="@id/main_option_img"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/main_option_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textColor="@color/C1"
+                android:textSize="@dimen/T2" />
+
+            <TextView
+                android:id="@+id/main_option_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gap_size_small"
+                android:text="@string/app_name"
+                android:textColor="@color/C3"
+                android:textSize="@dimen/T7" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <include layout="@layout/bottom_line" />
+
+</LinearLayout>

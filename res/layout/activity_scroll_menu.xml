@@ -1,0 +1,37 @@
+<com.zcs.app.advance.demo.scroll.views.ScrollMenu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll_menu"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/v2_theme_bg_color"
+        android:orientation="vertical" >
+
+        <!-- 内容展示区域 -->
+        <FrameLayout
+            android:id="@+id/layout_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="200dip" />
+
+        <!-- 底部菜单区域 -->
+        <FrameLayout
+            android:id="@+id/scroll_tab_frame"
+            android:layout_width="match_parent"
+            android:layout_height="72dip"
+            android:background="@color/black_10p" />
+
+        <!-- 菜单内容部分 -->
+        <FrameLayout
+            android:id="@+id/layout_menu_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="200dip"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</com.zcs.app.advance.demo.scroll.views.ScrollMenu>

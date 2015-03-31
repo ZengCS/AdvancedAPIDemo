@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Advanced</string>
+    <string name="txt_cancel">取消</string>
+    <string name="txt_ok">确定</string>
+    <string name="txt_done">完成</string>
+    <string name="txt_clip">裁剪</string>
+    <string name="txt_i_know">我知道了</string>
+    <string name="txt_help">帮助</string>
+    <string name="_1">1</string>
+    <string name="txt_step_hint">已移动步数：</string>
+    <string name="_0">0</string>
+    <string name="txt_start_game">开始游戏</string>
+    <string name="txt_restart">重新开始</string>
+    <string name="txt_nine">九宫格</string>
+    <string name="txt_16_grid">十六宫格</string>
+
+    <!-- 功能介绍Description -->
+    <string name="act_info">本节相关代码请查看:\n%1$s\n\n%2$s</string>
+    <string name="source_info">项目源码GitHub地址:\nhttps://github.com/zcs417327734/AdvanceAPIDemo\n\n电子邮箱:zengcs@vip.qq.com</string>
+    <string name="txt_photo">拍照</string>
+    <string name="txt_album">打开相册</string>
+    <string name="txt_home_desc">这里是主界面</string>
+
+</resources>

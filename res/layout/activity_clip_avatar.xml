@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/v2_theme_bg_color" >
+
+    <!-- TitleBar -->
+
+    <include
+        android:id="@+id/common_titlebar"
+        layout="@layout/titlebar_activity" />
+
+    <!-- 内容展示区域 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/common_titlebar" >
+
+        <com.zcs.app.advance.demo.avatar.views.ClipSquareImageView
+            android:id="@+id/clipSquareIV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.zcs.app.advance.demo.avatar.views.ClipSquareView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/gap_size_min" >
+
+            <Button
+                android:id="@+id/photoBtn"
+                style="@style/blueBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/txt_photo" />
+
+            <Button
+                android:id="@+id/selectBtn"
+                style="@style/blueBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/gap_size_min"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/txt_album" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/doneBtn"
+            style="@style/blueBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:padding="10dip"
+            android:text="@string/txt_clip" />
+    </RelativeLayout>
+
+</RelativeLayout>
