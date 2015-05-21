@@ -89,7 +89,6 @@ public class MainActivity extends BaseActivity implements OnItemClickListener {
 
 	@Override
 	protected void initTitlebar() {
-
 		// TODO 初始化标题栏
 		super.titlebarView = findViewById(R.id.common_titlebar);
 
@@ -108,6 +107,7 @@ public class MainActivity extends BaseActivity implements OnItemClickListener {
 		super.titleTxtRight = (TextView) titlebarView.findViewById(R.id.titletxt_right_act);
 		super.titleTxtRight.setText("关于");
 		super.titleTxtRight.setOnClickListener(this);
+
 	}
 
 	@Override

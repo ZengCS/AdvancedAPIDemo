@@ -21,6 +21,9 @@
     <string name="source_info">项目源码GitHub地址:\nhttps://github.com/zcs417327734/AdvanceAPIDemo\n\n电子邮箱:zengcs@vip.qq.com</string>
     <string name="txt_photo">拍照</string>
     <string name="txt_album">打开相册</string>
-    <string name="txt_home_desc">这里是主界面</string>
+    <string name="txt_home_desc">主界面</string>
+    <string name="txt_up_to_show_menu">向\n上\n滑\n动\n弹\n出\n菜\n单\n↑</string>
+    <string name="txt_start_en">Start</string>
+    <string name="txt_stop_en">Stop</string>
 
 </resources>

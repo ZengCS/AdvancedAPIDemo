@@ -1,37 +1,77 @@
-<com.zcs.app.advance.demo.scroll.views.ScrollMenu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/scroll_menu"
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:scrollbars="none" >
+    android:layout_height="fill_parent" >
 
-    <LinearLayout
+    <com.zcs.app.advance.demo.scroll.views.ScrollMenu
+        android:id="@+id/scroll_menu"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/v2_theme_bg_color"
+            android:orientation="vertical" >
+
+            <!-- 内容展示区域 -->
+
+            <FrameLayout
+                android:id="@+id/layout_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="200dip" />
+
+            <!-- 底部菜单区域 -->
+
+            <FrameLayout
+                android:id="@+id/scroll_tab_frame"
+                android:layout_width="match_parent"
+                android:layout_height="72dip"
+                android:background="@color/black_10p" />
+
+            <!-- 菜单内容部分 -->
+
+            <FrameLayout
+                android:id="@+id/layout_menu_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="200dip"
+                android:visibility="gone" />
+        </LinearLayout>
+    </com.zcs.app.advance.demo.scroll.views.ScrollMenu>
+
+    <!-- 上拉显示菜单 -->
+
+    <RelativeLayout
+        android:id="@+id/guide_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/v2_theme_bg_color"
-        android:orientation="vertical" >
+        android:background="@color/black_50p"
+        android:clickable="true" >
 
-        <!-- 内容展示区域 -->
-        <FrameLayout
-            android:id="@+id/layout_content"
-            android:layout_width="match_parent"
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:minHeight="200dip" />
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/txt_up_to_show_menu"
+            android:textColor="#EEE"
+            android:textSize="20sp" />
 
-        <!-- 底部菜单区域 -->
-        <FrameLayout
-            android:id="@+id/scroll_tab_frame"
-            android:layout_width="match_parent"
-            android:layout_height="72dip"
-            android:background="@color/black_10p" />
-
-        <!-- 菜单内容部分 -->
-        <FrameLayout
-            android:id="@+id/layout_menu_detail"
-            android:layout_width="match_parent"
+        <Button
+            android:id="@+id/btn_i_know"
+            style="@style/blueBtn"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:minHeight="200dip"
-            android:visibility="gone" />
-    </LinearLayout>
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/gap_size_normal"
+            android:layout_marginRight="@dimen/gap_size_normal"
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip"
+            android:text="@string/txt_i_know" />
+    </RelativeLayout>
 
-</com.zcs.app.advance.demo.scroll.views.ScrollMenu>
+</RelativeLayout>

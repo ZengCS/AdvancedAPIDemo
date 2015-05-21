@@ -35,7 +35,7 @@ public abstract class BaseFragmentActivity extends FragmentActivity implements O
 	protected View titlebarView;
 	protected ImageView titleBtnLeft, titleBtnRight;
 	protected TextView titleTxtCenter, titleTxtRight;
-	
+
 	protected Dialog mHelpDialog;
 
 	// 顶部提示信息
@@ -55,7 +55,7 @@ public abstract class BaseFragmentActivity extends FragmentActivity implements O
 			ANIM_TOP_TIP_OUT = AnimationUtils.loadAnimation(this, R.anim.push_up_out);
 		}
 	}
-	
+
 	/**
 	 * 显示帮助Dialog
 	 */
@@ -65,7 +65,7 @@ public abstract class BaseFragmentActivity extends FragmentActivity implements O
 		}
 		mHelpDialog.show();
 	}
-	
+
 	/**
 	 * 初始化帮助Dialog
 	 */
@@ -199,11 +199,6 @@ public abstract class BaseFragmentActivity extends FragmentActivity implements O
 
 	public void setScreenHeight(int screenHeight) {
 		this.screenHeight = screenHeight;
-	}
-
-	@Override
-	public void onClick(View v) {
-		// TODO Auto-generated method stub
 	}
 
 	@Override

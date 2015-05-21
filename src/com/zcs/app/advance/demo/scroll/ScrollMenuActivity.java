@@ -22,8 +22,7 @@ public class ScrollMenuActivity extends BaseFragmentActivity implements MainList
 
 	/** Views */
 	private ScrollMenu mMenu;
-
-	// private ViewGroup contentLayout, tabLayout, menuLayout;
+	private View guideLayout;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -47,6 +46,9 @@ public class ScrollMenuActivity extends BaseFragmentActivity implements MainList
 	@Override
 	public void onClick(View v) {
 		switch (v.getId()) {
+		case R.id.btn_i_know:// 我知道了
+			guideLayout.setVisibility(View.GONE);
+			break;
 		default:
 			break;
 		}
@@ -59,9 +61,8 @@ public class ScrollMenuActivity extends BaseFragmentActivity implements MainList
 	@Override
 	protected void initComponent() {
 		mMenu = (ScrollMenu) findViewById(R.id.scroll_menu);
-		// contentLayout = (ViewGroup) findViewById(R.id.layout_content);
-		// tabLayout = (ViewGroup) findViewById(R.id.scroll_tab_frame);
-		// menuLayout = (ViewGroup) findViewById(R.id.layout_menu_detail);
+		guideLayout = findViewById(R.id.guide_layout);
+		findViewById(R.id.btn_i_know).setOnClickListener(this);
 	}
 
 	@Override
@@ -114,4 +115,12 @@ public class ScrollMenuActivity extends BaseFragmentActivity implements MainList
 		tabFragment.tabSelection(index + 1);
 	}
 
+	@Override
+	public void onBackPressed() {
+		if (mMenu.isMenuOpen()) {
+			mMenu.closeMenuDetail();
+		} else {
+			super.onBackPressed();
+		}
+	}
 }

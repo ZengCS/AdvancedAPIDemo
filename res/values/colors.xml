@@ -2,6 +2,9 @@
 <resources>
 	<!-- <color name="maizi_green">#3BB753</color> -->
     <color name="github_blue">#1F76B6</color>
+    
+    <color name="start_color">#696969</color>
+    <color name="end_color">#20ffffff</color>
 	
     <!-- 普通颜色 -->
     <color name="white">#FFFFFF</color>

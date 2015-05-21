@@ -30,9 +30,9 @@ public interface MainListener {
 	public void showToastSingle(String text);
 
 	public String getVersionName();
-	
+
 	public void openMenu(int index);
-	
+
 	public void setCurrentTab(int index);
 
 	public int getScreenWidth();

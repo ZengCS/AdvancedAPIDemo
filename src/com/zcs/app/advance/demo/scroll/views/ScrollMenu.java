@@ -124,4 +124,8 @@ public class ScrollMenu extends ScrollView {
 			}, 60);
 		}
 	}
+
+	public boolean isMenuOpen() {
+		return isMenuOpen;
+	}
 }

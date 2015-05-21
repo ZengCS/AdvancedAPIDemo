@@ -25,10 +25,11 @@
 
             <ImageView
                 android:id="@+id/index_tab_1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_centerInParent="true"
                 android:contentDescription="@null"
+                android:scaleType="center"
                 android:src="@drawable/tab_1" />
         </RelativeLayout>
 
@@ -44,10 +45,11 @@
 
             <ImageView
                 android:id="@+id/index_tab_2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_centerInParent="true"
                 android:contentDescription="@null"
+                android:scaleType="center"
                 android:src="@drawable/tab_2" />
         </RelativeLayout>
 
@@ -63,10 +65,11 @@
 
             <ImageView
                 android:id="@+id/index_tab_3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_centerInParent="true"
                 android:contentDescription="@null"
+                android:scaleType="center"
                 android:src="@drawable/tab_3" />
         </RelativeLayout>
 
@@ -82,11 +85,13 @@
 
             <ImageView
                 android:id="@+id/index_tab_4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_centerInParent="true"
                 android:contentDescription="@null"
+                android:scaleType="center"
                 android:src="@drawable/tab_4" />
         </RelativeLayout>
     </LinearLayout>
+
 </LinearLayout>

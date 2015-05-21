@@ -9,6 +9,7 @@ import android.view.View;
 
 /**
  * 麦子学院头像裁剪
+ * 
  * @author ZengCS
  * @since 2014年8月11日
  */

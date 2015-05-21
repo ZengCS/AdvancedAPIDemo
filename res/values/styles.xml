@@ -17,6 +17,7 @@
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
     
+    <!-- 当前主题 -->
     <style name="MZV2Theme" parent="@android:style/Theme.Holo.Light.NoActionBar">
         <item name="android:textColor">#1A1A1A</item>
         <item name="android:textSize">14sp</item>

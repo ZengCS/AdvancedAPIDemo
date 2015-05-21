@@ -61,7 +61,7 @@ public class MainOptionListAdapter extends BaseAdapter {
 		holder.img.setImageResource(R.drawable.ic_option);
 		holder.name.setText(item.getName());
 		holder.desc.setText(item.getDesc());
-		
+
 		return convertView;
 	}
 

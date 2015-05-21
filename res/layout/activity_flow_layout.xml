@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/v2_theme_bg_color" >
+
+    <!-- TitleBar -->
+
+    <include
+        android:id="@+id/common_titlebar"
+        layout="@layout/titlebar_activity" />
+
+    <!-- 内容展示区域 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/common_titlebar"
+        android:orientation="vertical"
+        android:padding="@dimen/gap_size_min" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:orientation="horizontal"
+            android:padding="5dip" >
+
+            <EditText
+                android:id="@+id/et_add"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="请输入标签" />
+
+            <Button
+                android:id="@+id/btn_add"
+                style="@style/blueBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dip"
+                android:text="贴上" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_1px"
+            android:layout_marginBottom="10dip"
+            android:layout_marginTop="10dip"
+            android:background="@color/v2_bottom_line" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <com.zcs.app.advance.demo.flow.view.FlowLayout
+                android:id="@+id/custom_flow_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </com.zcs.app.advance.demo.flow.view.FlowLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>

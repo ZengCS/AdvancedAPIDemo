@@ -74,7 +74,7 @@ public abstract class BaseActivity extends Activity implements OnClickListener, 
 			ANIM_TOP_TIP_OUT = AnimationUtils.loadAnimation(this, R.anim.push_up_out);
 		}
 	}
-	
+
 	@SuppressLint("HandlerLeak")
 	private Handler baseHandler = new Handler() {
 		@Override
@@ -89,7 +89,7 @@ public abstract class BaseActivity extends Activity implements OnClickListener, 
 			}
 		}
 	};
-	
+
 	/**
 	 * 显示帮助Dialog
 	 */
@@ -99,7 +99,7 @@ public abstract class BaseActivity extends Activity implements OnClickListener, 
 		}
 		mHelpDialog.show();
 	}
-	
+
 	/**
 	 * 初始化帮助Dialog
 	 */
@@ -321,7 +321,7 @@ public abstract class BaseActivity extends Activity implements OnClickListener, 
 			e.printStackTrace();
 		}
 	}
-
+	
 	@Override
 	protected void onPause() {
 		super.onPause();

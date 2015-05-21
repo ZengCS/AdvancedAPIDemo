@@ -19,7 +19,7 @@ public class SettingFragment extends BaseFragment {
 		mListener.showToast("初始化:SettingFragment");
 		return root;
 	}
-	
+
 	@Override
 	public void onHiddenChanged(boolean hidden) {
 		// TODO Auto-generated method stub

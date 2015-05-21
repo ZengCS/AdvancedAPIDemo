@@ -32,7 +32,11 @@ public abstract class BaseFragment extends Fragment implements OnClickListener {
 	@Override
 	public void onAttach(Activity activity) {
 		super.onAttach(activity);
-		mListener = (MainListener) activity;
+		try {
+			mListener = (MainListener) activity;
+		} catch (Exception e) {
+			mListener = null;
+		}
 		mContext = activity;
 	}
 

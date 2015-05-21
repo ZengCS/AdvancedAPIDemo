@@ -15,8 +15,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/common_titlebar"
-        android:background="@color/black_10p" >
+        android:layout_below="@id/common_titlebar" >
     </RelativeLayout>
 
 </RelativeLayout>
